@@ -9,25 +9,33 @@ const logBtn = document.getElementById("log-btn");
 
 function adjustHealthBars(maxLife) {
   monsterHealthBar.max = maxLife;
-  monsterHealthBar.value = maxLife;
+  monsterHealthBar.value = maxLife; 
   playerHealthBar.max = maxLife;
   playerHealthBar.value = maxLife;
 }
 
-function dealMonsterDamage(damage) {
-  const dealtDamage = Math.random() * damage;
-  monsterHealthBar.value = +monsterHealthBar.value - dealtDamage;
-  return dealtDamage;
+function dealMonsterDamage(damage) {          
+  const dealtDamagetomonster = Math.random() * damage;
+  monsterHealthBar.value -=dealtDamagetomonster;
+  return dealtDamagetomonster;
 }
 
 function dealPlayerDamage(damage) {
-  const dealtDamage = Math.random() * damage;
-  playerHealthBar.value = +playerHealthBar.value - dealtDamage;
-  return dealtDamage;
+  const dealtDamagetoplayer = Math.random() * damage;
+  playerHealthBar.value -=dealtDamagetoplayer;           //+playerHealthBar.value 
+  return dealtDamagetoplayer;
 }
 
 function increasePlayerHealth(healValue) {
-  playerHealthBar.value = +playerHealthBar.value + healValue;
+  
+  if (currentplayerhealth >= 100||playerHealthBar.value>=100) {
+    currentplayerhealth = 100;
+    playerHealthBar.value = 100;
+  } else {
+    currentplayerhealth += heal_value;
+    currentplayerhealth = currentplayerhealth;
+    playerHealthBar.value = +playerHealthBar.value + healValue;
+  }
 }
 
 function resetGame(value) {
