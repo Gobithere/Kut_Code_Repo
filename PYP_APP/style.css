@@ -1,0 +1,24 @@
+.Head {
+  text-align: center;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+}
+td,
+th,
+tr {
+  border: 1px solid black;
+  padding: 5px;
+  column-width: auto;
+  text-align: center;
+}
+
+Button {
+  font-size: 20px;
+}
+.Buton2 {
+  margin-left: 1000px;
+}
