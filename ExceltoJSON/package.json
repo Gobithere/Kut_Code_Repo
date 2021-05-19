@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "cfonts": "^2.9.2",
+    "chalk": "^4.1.1",
+    "fs": "^0.0.1-security",
+    "utf8": "^3.0.0",
+    "xlsx": "^0.16.9"
+  },
+  "name": "exceltojson",
+  "version": "1.0.0",
+  "main": "Exeltojson.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Kutay CEBECİ",
+  "license": "ISC",
+  "description": ""
+}
